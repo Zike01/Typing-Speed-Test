@@ -76,7 +76,7 @@ def start_test():
 
     # Generate a random quote from the quotes.json file
     chosen_quote = generator.get_random_quote()["quote"]
-    canvas.itemconfig(main_text, text=chosen_quote)
+    canvas.itemconfig(main_text, fill=BLACK, text=chosen_quote)
 
     # Prompt the user with the first word of the quote text
     prompt(chosen_quote.split())
